@@ -1,0 +1,97 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "c982e369-3e6e-4abb-a9a1-bd7729a8e7ba": {
+        "id": "c982e369-3e6e-4abb-a9a1-bd7729a8e7ba",
+        "parent": null,
+        "name": "s3induu.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "s3induu.js",
+        "cursor": {
+          "lineNumber": 3,
+          "column": 49
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "s3as2TestLahiru",
+            "config": {
+              "type": "s3:ObjectCreated:*",
+              "keyPrefix": "",
+              "keySuffix": ""
+            }
+          }
+        ],
+        "testCases": {
+          "e839b991-64bc-4085-9c65-8cd73d5831d4": {
+            "id": "e839b991-64bc-4085-9c65-8cd73d5831d4",
+            "name": "Test event",
+            "functionId": "c982e369-3e6e-4abb-a9a1-bd7729a8e7ba",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "c982e369-3e6e-4abb-a9a1-bd7729a8e7ba"
+    ],
+    "currentFileId": "c982e369-3e6e-4abb-a9a1-bd7729a8e7ba",
+    "resources": {
+      "s3as2TestLahiru": {
+        "name": "s3as2TestLahiru",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "as2-test-lahiru"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "s3induu",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1585724910576
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "s3induu",
+      "url": "https://github.com/Indunil1992/s3induu"
+    }
+  }
+}
